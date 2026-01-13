@@ -53,3 +53,4 @@ Flags:
 ## Notes
 - All clients should use the same sample rate and frames-per-buffer values.
 - This project forwards raw PCM data; it does not mix, compress, or encrypt audio.
+- Significant part of the client was written by GPT-5.2 Codex
