@@ -15,7 +15,7 @@ go build -o bin/server ./cmd/server
 
 Client (C + PortAudio):
 ```sh
-cc cmd/client_c/main.c -o bin/client_c -lportaudio -lpthread
+cc cmd/client/main.c -o bin/client -lportaudio -lpthread
 ```
 
 Or build both:
@@ -39,7 +39,7 @@ Flags:
 
 ## Client usage
 ```sh
-bin/client_c -s 192.168.1.27:9000 -i 10 -o 10 -f 640
+bin/client -s 0.0.0.0:9000 -i 10 -o 10 -f 640
 ```
 
 Flags:
@@ -53,4 +53,4 @@ Flags:
 ## Notes
 - All clients should use the same sample rate and frames-per-buffer values.
 - This project forwards raw PCM data; it does not mix, compress, or encrypt audio.
-- Significant part of the client was written by GPT-5.2 Codex
+- A significant part of the client was written by GPT-5.2 Codex.

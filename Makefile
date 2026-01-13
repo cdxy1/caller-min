@@ -12,7 +12,7 @@ build-server:
 
 build-client:
 	[ -d "$(BUILD_DIR)" ] || mkdir -p $(BUILD_DIR)
-	cc cmd/client_c/main.c -o $(BUILD_DIR)/client_c -lportaudio -lpthread
+	cc cmd/client/main.c -o $(BUILD_DIR)/client -lportaudio -lpthread
 
 fmt:
 	go fmt ./...
