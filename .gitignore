@@ -1,0 +1,11 @@
+/bin/
+*.o
+*.a
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.test
+*.tmp
+*.log
